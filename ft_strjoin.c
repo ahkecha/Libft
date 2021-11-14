@@ -6,7 +6,7 @@
 /*   By: ahkecha <ahkecha@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 10:13:48 by ahkecha           #+#    #+#             */
-/*   Updated: 2021/11/10 10:29:02 by ahkecha          ###   ########.fr       */
+/*   Updated: 2021/11/11 13:27:06 by ahkecha          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	j = 0;
 	if (!s1 || !s2)
 		return (NULL);
-	join = (char *)malloc(sizeof(char) * ft_strlen(s1) + ft_strlen(s2) + 1 );
+	join = (char *)malloc(sizeof(char) * ft_strlen(s1) + ft_strlen(s2) + 1);
 	if (!join)
 		return (NULL);
 	i = 0;

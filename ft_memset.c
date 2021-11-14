@@ -6,11 +6,13 @@
 /*   By: ahkecha <ahkecha@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 10:49:35 by ahkecha           #+#    #+#             */
-/*   Updated: 2021/11/10 11:15:29 by ahkecha          ###   ########.fr       */
+/*   Updated: 2021/11/12 12:20:47 by ahkecha          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memset(void *b, int c, int len)
+#include "libft.h"
+
+void	*ft_memset(void *b, int c, size_t len)
 {
 	unsigned char	*p;
 

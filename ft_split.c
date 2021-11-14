@@ -6,13 +6,13 @@
 /*   By: ahkecha <ahkecha@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/06 16:00:34 by ahkecha           #+#    #+#             */
-/*   Updated: 2021/11/09 12:09:14 by ahkecha          ###   ########.fr       */
+/*   Updated: 2021/11/11 15:33:37 by ahkecha          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static size_t	ft_wordcnt(const char *s, char d)
+static size_t	ft_charcnt(const char *s, char d)
 {
 	size_t	cnt;
 	size_t	i;
@@ -57,7 +57,7 @@ char	**ft_split(const char *s, char d)
 
 	if (!s)
 		return (NULL);
-	len = ft_wordcnt(s, d);
+	len = ft_charcnt(s, d);
 	ptr = (char **)ft_calloc(len + 1, sizeof(char *));
 	if (!ptr)
 		return (NULL);

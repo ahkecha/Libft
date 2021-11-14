@@ -6,7 +6,7 @@
 /*   By: ahkecha <ahkecha@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 10:56:31 by ahkecha           #+#    #+#             */
-/*   Updated: 2021/11/07 16:36:21 by ahkecha          ###   ########.fr       */
+/*   Updated: 2021/11/11 13:41:40 by ahkecha          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,13 +27,13 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	{
 		while ((int)(--len) >= 0)
 		{
-			*(dstc + len) = *(srcc + len);
+			dstc[len] = srcc[len];
 		}
 	}
 	else
 	{
 		while (++i < len)
-			*(dstc + i) = *(srcc + i);
+			dstc[i] = srcc[i];
 	}
 	return (dst);
 }
